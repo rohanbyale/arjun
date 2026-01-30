@@ -19,6 +19,9 @@ import WorkerHomeCTA from "./components/WorkerCta";
 import WorkerLogin from "./auth/WorkerLogin";
 import WorkerRegistration from "./auth/WorkerRegst";
 import Service from "./components/Service";
+import AdminLogin from "./auth/AdminLogin";
+import AdminSignUp from "./auth/AdminRegistration";
+import AdminProfile from "./pages/admin/AdminProfile";
 
 
 
@@ -68,6 +71,9 @@ function App() {
           {/* Home Route */}
           <Route path="/" element={
             <>
+            {/* <AdminSignUp />
+            <AdminLogin /> */}
+            <AdminProfile />
               <Hero />
               <ServicesPage />
               <Process />
