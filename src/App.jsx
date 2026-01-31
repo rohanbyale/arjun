@@ -21,7 +21,7 @@ import WorkerRegistration from "./auth/WorkerRegst";
 import Service from "./components/Service";
 import AdminLogin from "./auth/AdminLogin";
 import AdminSignUp from "./auth/AdminRegistration";
-import AdminProfile from "./pages/admin/AdminProfile";
+import MainPage from './pages/admin/MainPage'
 
 
 
@@ -73,7 +73,7 @@ function App() {
             <>
             {/* <AdminSignUp />
             <AdminLogin /> */}
-            <AdminProfile />
+          
               <Hero />
               <ServicesPage />
               <Process />
@@ -90,7 +90,7 @@ function App() {
           <Route path="/workerlogin" element={<WorkerLogin />} />
           <Route path="/workerregistration" element={<WorkerRegistration />} />
           
-     
+     <Route path="/admin" element={<MainPage />} />
 
           {/* Legacy route (optional) */}
           <Route path="/become-provider" element={<BecomeProvider />} />
